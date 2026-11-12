@@ -602,7 +602,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--mu-scale",
         type=float,
-        default=800.0,
+        default=1500.0,
         help="Constant in mu_t = mu_scale / sqrt(t+1). 1000 matches the squared full-network gradient scale, where rho starts near 600 and falls to about 10.",
     )
     parser.add_argument("--seed", type=int, default=0)
